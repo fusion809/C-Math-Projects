@@ -1,24 +1,9 @@
 // Function to calculate the absolute value of a number
 #include <stdio.h>
-float absoluteValue (float x)
-{
-  if ( x < 0 )
-  x = -x;
-  return (x);
-}
-
-// Function to compute the square root of a number
-float squareRoot (float x)
-{
-  const float epsilon = .0000001;
-  float guess = 1.0;
-  while ( absoluteValue (guess * guess - x) >= epsilon )
-  guess = ( x / guess + guess ) / 2.0;
-  return guess;
-}
+#include <sqroot.h>
 
 int main (void)
 {
-  printf ("squareRoot (2.0)   = %.15f\n", squareRoot (2.0));
+  printf ("squareRoot (612.0)   = %.15f\n", squareRoot (612.0));
   return 0;
 }
