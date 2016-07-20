@@ -4,6 +4,10 @@
 
 int main (void)
 {
-  printf ("cubeqRoot (1.0,2.0,3.0,-3.0)      = %.15f\n", cubeqRoot (1.0,2.0,3.0,-3.0));
+  float a, b, c, d, x, epsilon;
+  printf ("Enter five numbers \nFirst four are a, b, c, d in ax^3 + bx^2 + cx + d = 0. Fifth is the absolute error tolerance (epsilon) to be applied. Separate all input numbers with commas): \n");
+  scanf ("%f, %f, %f, %f, %f", &a, &b, &c, &d, &epsilon);
+  x = cubeqRoot(a,b,c,d,epsilon);
+  printf ("cubeqRoot(a,b,c,d)   = %.15f", x);
   return 0;
 }
