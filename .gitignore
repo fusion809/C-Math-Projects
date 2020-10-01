@@ -4,3 +4,5 @@ cubicroot
 *.o
 cubeqroot
 cubeqroot.o
+*.svg
+.ccls-cache
